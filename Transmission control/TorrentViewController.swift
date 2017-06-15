@@ -10,6 +10,8 @@ import UIKit
 
 class TorrentViewController: UITableViewController {
     
+    var ids = 0
+    
     var timer:Timer?
     let transmissionRequest = TransmissionRequest()
     var getTorrent : [torrent] = []
@@ -252,36 +254,22 @@ class TorrentViewController: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("You selected cell number: \(indexPath.row)!")
-        self.performSegue(withIdentifier: "torrentSegue", sender: self)
-    }
- 
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.ids = getTorrent[indexPath.row].id
+        self.performSegue(withIdentifier: "torrentInspectorSegue", sender: self)
+    }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       
+        if(segue.identifier == "torrentInspectorSegue"){
+            let tabBarController = segue.destination as! UITabBarController
+            let GeneralTableViewController = tabBarController.viewControllers?[0] as!  GeneralTableViewController
+            GeneralTableViewController.ids = self.ids
+        }
     }
-    */
+ 
     
     func update() {
         

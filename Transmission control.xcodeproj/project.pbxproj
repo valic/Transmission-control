@@ -15,8 +15,8 @@
 		FB659E8C1EF1464F00E85E9E /* TorrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB659E8B1EF1464F00E85E9E /* TorrentViewController.swift */; };
 		FB659E8E1EF146D600E85E9E /* TorrentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB659E8D1EF146D600E85E9E /* TorrentViewCell.swift */; };
 		FB659E901EF150CA00E85E9E /* TransmissionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB659E8F1EF150CA00E85E9E /* TransmissionRequest.swift */; };
-		FB659E921EF20CF000E85E9E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB659E911EF20CF000E85E9E /* TabBarViewController.swift */; };
 		FB659E951EF20D4D00E85E9E /* TrackersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB659E941EF20D4D00E85E9E /* TrackersTableViewController.swift */; };
+		FB9C62951EF290A800FDBA01 /* GeneralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9C62941EF290A800FDBA01 /* GeneralTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		FB659E8B1EF1464F00E85E9E /* TorrentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentViewController.swift; sourceTree = "<group>"; };
 		FB659E8D1EF146D600E85E9E /* TorrentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentViewCell.swift; sourceTree = "<group>"; };
 		FB659E8F1EF150CA00E85E9E /* TransmissionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmissionRequest.swift; sourceTree = "<group>"; };
-		FB659E911EF20CF000E85E9E /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		FB659E941EF20D4D00E85E9E /* TrackersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackersTableViewController.swift; sourceTree = "<group>"; };
+		FB9C62941EF290A800FDBA01 /* GeneralTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +90,22 @@
 				FB659E8F1EF150CA00E85E9E /* TransmissionRequest.swift */,
 				FB659E8B1EF1464F00E85E9E /* TorrentViewController.swift */,
 				FB659E8D1EF146D600E85E9E /* TorrentViewCell.swift */,
-				FB659E941EF20D4D00E85E9E /* TrackersTableViewController.swift */,
-				FB659E911EF20CF000E85E9E /* TabBarViewController.swift */,
+				FB9C62981EF2C1CA00FDBA01 /* TabBar */,
 				FB659E7D1EF1457F00E85E9E /* Main.storyboard */,
 				FB659E801EF1457F00E85E9E /* Assets.xcassets */,
 				FB659E821EF1457F00E85E9E /* LaunchScreen.storyboard */,
 				FB659E851EF1457F00E85E9E /* Info.plist */,
 			);
 			path = "Transmission control";
+			sourceTree = "<group>";
+		};
+		FB9C62981EF2C1CA00FDBA01 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FB9C62941EF290A800FDBA01 /* GeneralTableViewController.swift */,
+				FB659E941EF20D4D00E85E9E /* TrackersTableViewController.swift */,
+			);
+			name = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +235,8 @@
 				FB659E8E1EF146D600E85E9E /* TorrentViewCell.swift in Sources */,
 				FB659E7A1EF1457F00E85E9E /* AppDelegate.swift in Sources */,
 				FB659E951EF20D4D00E85E9E /* TrackersTableViewController.swift in Sources */,
+				FB9C62951EF290A800FDBA01 /* GeneralTableViewController.swift in Sources */,
 				FB659E8C1EF1464F00E85E9E /* TorrentViewController.swift in Sources */,
-				FB659E921EF20CF000E85E9E /* TabBarViewController.swift in Sources */,
 				FB659E901EF150CA00E85E9E /* TransmissionRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

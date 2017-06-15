@@ -10,12 +10,10 @@ import UIKit
 
 class TrackersTableViewController: UITableViewController {
 
-    var ids: Int = 0
+    var ids : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      //  print(ids)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

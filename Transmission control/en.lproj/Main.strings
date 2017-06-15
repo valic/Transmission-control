@@ -1,0 +1,117 @@
+
+/* Class = "UILabel"; text = "torrentProgress"; ObjectID = "3cI-uh-bv3"; */
+"3cI-uh-bv3.text" = "torrentProgress";
+
+/* Class = "UILabel"; text = "Error"; ObjectID = "4Hf-qr-Fw1"; */
+"4Hf-qr-Fw1.text" = "Error";
+
+/* Class = "UILabel"; text = "Seed"; ObjectID = "4QE-xx-bpe"; */
+"4QE-xx-bpe.text" = "Seed";
+
+/* Class = "UINavigationItem"; title = "Torrents"; ObjectID = "4Yd-Fo-RDq"; */
+"4Yd-Fo-RDq.title" = "Torrents";
+
+/* Class = "UILabel"; text = "Ratio"; ObjectID = "5PC-Uh-YGa"; */
+"5PC-Uh-YGa.text" = "Ratio";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "7zU-1h-nI8"; */
+"7zU-1h-nI8.text" = "50 %";
+
+/* Class = "UILabel"; text = "Downloaded"; ObjectID = "AS9-zG-jiy"; */
+"AS9-zG-jiy.text" = "Downloaded";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "Axv-bV-DsF"; */
+"Axv-bV-DsF.text" = "50 %";
+
+/* Class = "UILabel"; text = "Stop"; ObjectID = "B1a-Yi-0aN"; */
+"B1a-Yi-0aN.text" = "Stop";
+
+/* Class = "UILabel"; text = "torrentProgress"; ObjectID = "Cpe-6S-Qun"; */
+"Cpe-6S-Qun.text" = "torrentProgress";
+
+/* Class = "UILabel"; text = "Up Speed"; ObjectID = "Dm4-5W-fVX"; */
+"Dm4-5W-fVX.text" = "Up Speed";
+
+/* Class = "UILabel"; text = "Torrent name"; ObjectID = "J1A-Vl-edM"; */
+"J1A-Vl-edM.text" = "Torrent name";
+
+/* Class = "UILabel"; text = "Torrent name"; ObjectID = "JeY-fV-7c8"; */
+"JeY-fV-7c8.text" = "Torrent name";
+
+/* Class = "UILabel"; text = "Torrent name"; ObjectID = "JjA-2R-Kfg"; */
+"JjA-2R-Kfg.text" = "Torrent name";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "KK7-Hb-Q9E"; */
+"KK7-Hb-Q9E.text" = "50 %";
+
+/* Class = "UILabel"; text = "Download"; ObjectID = "KVA-oA-5I7"; */
+"KVA-oA-5I7.text" = "Download";
+
+/* Class = "UILabel"; text = "Down Speed"; ObjectID = "LtS-q2-9KE"; */
+"LtS-q2-9KE.text" = "Down Speed";
+
+/* Class = "UITabBarItem"; title = "Files"; ObjectID = "UJl-2l-fQ9"; */
+"UJl-2l-fQ9.title" = "Files";
+
+/* Class = "UILabel"; text = "Downloaded"; ObjectID = "YLd-Df-hAo"; */
+"YLd-Df-hAo.text" = "Downloaded";
+
+/* Class = "UILabel"; text = "torrentProgress"; ObjectID = "aRp-2F-vnW"; */
+"aRp-2F-vnW.text" = "torrentProgress";
+
+/* Class = "UITableViewSection"; headerTitle = "Torrent"; ObjectID = "cfI-N0-ZME"; */
+"cfI-N0-ZME.headerTitle" = "Torrent";
+
+/* Class = "UILabel"; text = "Up Speed"; ObjectID = "e5B-Nz-iK1"; */
+"e5B-Nz-iK1.text" = "Up Speed";
+
+/* Class = "UILabel"; text = "Last Activity"; ObjectID = "fhz-jP-C3w"; */
+"fhz-jP-C3w.text" = "Last Activity";
+
+/* Class = "UITabBarItem"; title = "Trackers"; ObjectID = "fvA-jY-fE9"; */
+"fvA-jY-fE9.title" = "Trackers";
+
+/* Class = "UILabel"; text = "ETA"; ObjectID = "je6-lM-Zl2"; */
+"je6-lM-Zl2.text" = "ETA";
+
+/* Class = "UILabel"; text = "Check"; ObjectID = "jsN-fL-jre"; */
+"jsN-fL-jre.text" = "Check";
+
+/* Class = "UITabBarItem"; title = "Peers"; ObjectID = "oa7-2u-wDy"; */
+"oa7-2u-wDy.title" = "Peers";
+
+/* Class = "UITableViewSection"; headerTitle = "Transfer"; ObjectID = "ohj-p0-w9g"; */
+"ohj-p0-w9g.headerTitle" = "Transfer";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qBP-ba-WRG"; */
+"qBP-ba-WRG.text" = "Label";
+
+/* Class = "UILabel"; text = "Torrent name"; ObjectID = "qpj-xw-s4R"; */
+"qpj-xw-s4R.text" = "Torrent name";
+
+/* Class = "UILabel"; text = "Torrent name"; ObjectID = "sQQ-2h-fRc"; */
+"sQQ-2h-fRc.text" = "Torrent name";
+
+/* Class = "UITabBarItem"; title = "General"; ObjectID = "sym-Zh-hvy"; */
+"sym-Zh-hvy.title" = "General";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "vL5-4V-NEu"; */
+"vL5-4V-NEu.text" = "50 %";
+
+/* Class = "UILabel"; text = "Downloaded"; ObjectID = "vU5-xf-p3E"; */
+"vU5-xf-p3E.text" = "Downloaded";
+
+/* Class = "UILabel"; text = "Ratio"; ObjectID = "xHK-dc-RtV"; */
+"xHK-dc-RtV.text" = "Ratio";
+
+/* Class = "UILabel"; text = "Status"; ObjectID = "xZ2-6h-Nj7"; */
+"xZ2-6h-Nj7.text" = "Status";
+
+/* Class = "UILabel"; text = "Downloaded"; ObjectID = "xd5-oO-22r"; */
+"xd5-oO-22r.text" = "Downloaded";
+
+/* Class = "UILabel"; text = "50 %"; ObjectID = "xi7-jE-VRu"; */
+"xi7-jE-VRu.text" = "50 %";
+
+/* Class = "UILabel"; text = "torrentProgress"; ObjectID = "ykF-Ot-qpo"; */
+"ykF-Ot-qpo.text" = "torrentProgress";

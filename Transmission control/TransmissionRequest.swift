@@ -60,6 +60,28 @@ class torrent {
     }
 }
 
+class torrentInfo {
+   
+    var id:Int
+    var name:String
+    var status:Int
+    var downloadedEver:Int
+    var rateDownload:Int
+    var trackerStats:[trackerStats]
+    
+    init(id:Int, name:String, status:Int, downloadedEver:Int, rateDownload:Int, trackerStats:[trackerStats]) {
+        self.id = id
+        self.name = name
+        self.status = status
+        self.downloadedEver = downloadedEver
+        self.rateDownload = rateDownload
+        self.trackerStats = trackerStats
+    }
+    
+    
+}
+
+
 class torrentFiles{
 
     var id:Int
@@ -83,7 +105,7 @@ class torrentFileStats{
     var priority:Int
     var wanted:Bool
     
-    init( bytesCompleted:Int, priority:Int, wanted:Bool) {
+    init(bytesCompleted:Int, priority:Int, wanted:Bool) {
 
         self.bytesCompleted = bytesCompleted
         self.priority = priority
@@ -269,6 +291,49 @@ class TransmissionRequest{
             
         }
     }
+    
+    func getTorrentInfo(ids:Int,completion: @escaping  (torrentInfo) -> ()) {
+        
+        
+        let jsonString: [String: Any] = [
+            "arguments": [
+                "fields" :  ["id", "name", "status", "downloadedEver", "rateDownload", "trackerStats"],
+                "ids": [ids]
+            ],
+            "method": "torrent-get"
+        ]
+        
+        requestAlamofire(json: jsonString) { responseObject, error in
+            
+           
+            
+            if let responseObject = responseObject {
+                let json = JSON(responseObject)
+                
+                if json["result"].stringValue == "success" {
+                    
+                    for item in json["arguments"]["torrents"].arrayValue {
+                        
+                        var trackerStatsArray = [trackerStats]()
+                        
+                        for tracker in item["trackerStats"].arrayValue{
+                            trackerStatsArray.append(trackerStats(seederCount: tracker["seederCount"].intValue,
+                                                                  leecherCount: tracker["leecherCount"].intValue))
+                        }
+                        
+                        completion(torrentInfo(id: item["id"].intValue,
+                            name: item["name"].stringValue,
+                            status: item["status"].intValue,
+                            downloadedEver: item["downloadedEver"].intValue,
+                            rateDownload: item["rateDownload"].intValue,
+                            trackerStats: trackerStatsArray))
+
+                    }
+                }
+            }           
+        }
+    }
+    
     func torrentFilesGet(ids:Int, completion: @escaping  ([torrentFilesAll]) -> ()) {
         
         var torrentFilesAllArray = [torrentFilesAll]()
