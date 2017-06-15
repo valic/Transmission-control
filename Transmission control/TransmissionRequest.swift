@@ -31,11 +31,11 @@ class torrent {
     var uploadedEver:Int
     var queuePosition:Int
     var trackerStats:[trackerStats]
-    var recheckProgress:Double
+    var recheckProgress:Float
   
     
     
-    init(id:Int, name:String, percentDone:Float, eta:Int, rateDownload:Int, rateUpload:Int, status:Int, peersGettingFromUs:Int, peersSendingToUs:Int, peersConnected:Int, totalSize:Int, sizeWhenDone:Int, error:Int, errorString:String,  uploadRatio:Float, downloadedEver:Int, uploadedEver:Int, queuePosition:Int, trackerStats:[trackerStats], recheckProgress:Double) {
+    init(id:Int, name:String, percentDone:Float, eta:Int, rateDownload:Int, rateUpload:Int, status:Int, peersGettingFromUs:Int, peersSendingToUs:Int, peersConnected:Int, totalSize:Int, sizeWhenDone:Int, error:Int, errorString:String,  uploadRatio:Float, downloadedEver:Int, uploadedEver:Int, queuePosition:Int, trackerStats:[trackerStats], recheckProgress:Float) {
         self.id = id
         self.name = name
         self.percentDone = percentDone
@@ -261,7 +261,7 @@ class TransmissionRequest{
                                                     uploadedEver: item["uploadedEver"].intValue,
                                                     queuePosition: item["queuePosition"].intValue,
                                                     trackerStats: trackerStatsArray,
-                                                    recheckProgress: item["recheckProgress"].doubleValue))
+                                                    recheckProgress: item["recheckProgress"].floatValue))
                     }
                 }
             }
@@ -348,7 +348,7 @@ class TransmissionRequest{
         
     }
     func startTorrent(id: Int){
-        
+
         let jsonString: [String: Any] = [
             "arguments": [ "ids" :  [id]],
             "method": "torrent-start"
